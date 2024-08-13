@@ -1,0 +1,310 @@
+*{
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 400;
+        font-style: normal;
+        background-color: rgb(0, 0, 0);
+
+}
+
+header{
+    background-color: black;
+    width:100%;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+header p{
+    margin-left: 40px;
+    font-size: 30px;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-items: start;
+
+    
+}
+nav ul li a{
+    color: white;
+    margin:10px;
+    margin-top: 70px;
+
+    justify-content: center;
+ 
+    font-size: medium;
+    padding-top: 70px;
+}
+nav ul li a:hover {
+    color: rgb(6, 6, 7);
+    background-color: #ad7bce;
+    font-size: larger;
+    
+   
+  }
+header p:hover{
+    font-size: 40px ;
+}
+  
+video{
+    width:100%;
+    height:700px;
+    object-fit:cover ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.overlay{
+    position:absolute ;
+    top: 45%;
+    left:30%;
+    background-color: black;
+    
+}
+h1, .overlay p{
+    padding: 0;
+    margin: 0;
+    color: rgb(232, 232, 245);
+    background-color: black;
+}
+h1{
+    font-size: 100px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease;
+}
+
+  h1:hover {
+    font-size: 120px; 
+    color: #ad7bce; 
+    opacity: 100;
+  }
+
+.overlay p{
+    font-size: 40px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease;
+
+}
+.overlay p:hover {
+    font-size: 120px; 
+    color: #ad7bce; 
+    opacity: 100;
+}
+.vid2{
+    margin-left: 30%;
+    margin-top: 50px ;
+}
+#about{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.about{
+    position: absolute;
+    top: 40;
+    
+}
+
+.about1{
+    height: 100px;
+    width:1200px;
+    margin-top: 0%;
+    margin-left: 5%;
+    color: #c3acd3;
+}
+
+h2{ color: #c3acd3;
+    font-size: 100px;
+    margin-bottom: 5px;
+}
+.about1 p{
+    line-height: 50px;
+    font-size: 30px;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+ 
+    font-style: normal;
+    
+}
+.vid2{
+    margin-left: 30%;
+}
+/* scroll */
+::-webkit-scrollbar {
+    width: 20px;
+    color:transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px transparent; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(72, 23, 72); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e295f6; 
+  }
+
+
+/* project */
+.proj1 h2{
+    text-align: right;
+    text-decoration: underline;
+}
+
+.proj2{
+    display: flex ;
+    justify-content: space-between;
+}
+
+.proj2 img{
+    height:300px;
+    width: 470px ;
+    display: inline-block;
+    border-radius: 10%;
+
+}
+.proj2 img:hover{
+    scale:1.05;
+
+}
+
+
+/* trying out */
+.container1 {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    
+    background-color:rgba(0, 0, 0, 0.5)
+  }
+  
+  .container1:hover .overlay1 {
+    opacity: 1;
+    scale:1.05;
+  }
+  
+  .overlay1 {
+    
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10%;
+  }
+
+  /* contact */
+.gif{
+    display: inline-block;
+}
+  .gif img{
+    width:450px;
+    border-radius: 5%;
+  }
+.icon{
+    display: inline-block;
+    height:400px;
+
+}
+.icon img{
+    height:55px;
+    width: 55px;
+    padding:20px;
+}
+.form{
+    display: inline-block;
+    caret-color: rgba(0, 0, 0, 0.849);
+    height:400px;
+    width:400px;
+    color:antiquewhite;
+    align-items: center;
+    margin-left:10%;
+
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+ 
+    font-style: normal;
+}
+
+input, textarea, button{
+    padding:20px;
+    margin-bottom: 30px;
+    width:600px;
+    background-color: #765c7d;
+    color: rgb(255, 255, 255);
+
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+ 
+    font-style: normal;
+
+    border-radius: 30px;
+}
+
+button{
+    width:650px;
+    background-color: #411a4b;
+    color: rgb(248, 248, 248);
+    border-radius: 30px;
+}
+button:hover{
+    background-color: #5a0792;
+    color: azure;
+}
+
+
+/* footer */
+footer{
+    height:300px;
+    width: 100%;
+    margin-top: 200px;
+    background-color: #321442;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+footer p, footer h3,footer img{
+    background-color:#321442;
+    color: #dad7cd;
+    text-align: center;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+
+}
